@@ -1,0 +1,16 @@
+1 - JSX
+2 - Facilita a conexão direta
+3 - Componentes 1 e 2
+4 - a) <Greeting message=`Pedrinho`/>
+5 - <input type="text"id="email" onValue{({value}) =>
+6 - useState
+7 - CRA (create-react-app) e Gulp
+8 -
+9 - useHistory
+10 - createBrowserRouter e RouterProvider
+11 -
+12 - React.createContext, Provider
+13 - Suporte nativo para aplicações mobile: O Next.js
+14 - e) Criar um arquivo para cada rota dinamica dentro do dietorio "pages, utilizando
+colchetes e nomeando o arquivo com o parametro desejado.
+15 - parâmetro "Children"
