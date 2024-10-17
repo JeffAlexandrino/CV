@@ -34,6 +34,7 @@ const translations = {
         interestsTitle: "Interests",
         interests: ["Technology", "Digital Games", "Foreign Language Study", "Books", "History", "Anime"]
     },
+
     pt: {
         headerName: "Jefferson Barzan Alexandrino",
         linksTitle: "Links",
@@ -69,6 +70,7 @@ const translations = {
         interestsTitle: "Interesses",
         interests: ["Tecnologia", "Jogos digitais", "Estudo de linguagem estrangeira", "Livros", "História", "Anime"]
     },
+
     jp: {
         headerName: "ジェファーソン・バルザン・アレクサンドリーノ",
         linksTitle: "リンク",
@@ -105,3 +107,45 @@ const translations = {
         interests: ["テクノロジー", "デジタルゲーム", "外国語の学習", "本", "歴史", "アニメ"]
     }
 };
+
+function changeLanguage(lang) {
+    document.querySelector('h1').innerText = translations[lang].headerName;
+    document.querySelector('#links h2').innerText = translations[lang].linksTitle;
+    document.querySelector('#sobre-mim h2').innerText = translations[lang].aboutTitle;
+    document.querySelector('#sobre-mim p').innerText = translations[lang].aboutText;
+    document.querySelector('#dados h2').innerText = translations[lang].personalDataTitle;
+    document.querySelector('#dados li:nth-child(1)').innerText = translations[lang].dob;
+    document.querySelector('#dados li:nth-child(2)').innerText = translations[lang].age;
+    document.querySelector('#dados li:nth-child(3)').innerText = translations[lang].gender;
+    document.querySelector('#dados li:nth-child(4)').innerText = translations[lang].address;
+    document.querySelector('#dados li:nth-child(5)').innerText = translations[lang].email;
+    document.querySelector('#dados li:nth-child(6)').innerText = translations[lang].phone;
+    document.querySelector('#experiencia h2').innerText = translations[lang].experienceTitle;
+    document.querySelector('#experiencia .job:nth-child(1) h3').innerText = translations[lang].job1Title;
+    document.querySelector('#experiencia .job:nth-child(1) p:nth-child(2)').innerText = translations[lang].job1Company;
+    document.querySelector('#experiencia .job:nth-child(1) p:nth-child(3)').innerText = translations[lang].job1Period;
+    document.querySelector('#experiencia .job:nth-child(2) h3').innerText = translations[lang].job2Title;
+    document.querySelector('#experiencia .job:nth-child(2) p:nth-child(2)').innerText = translations[lang].job2Company;
+    document.querySelector('#experiencia .job:nth-child(2) p:nth-child(3)').innerText = translations[lang].job2Period;
+    document.querySelector('#experiencia .job:nth-child(3) h3').innerText = translations[lang].job3Title;
+    document.querySelector('#experiencia .job:nth-child(3) p:nth-child(2)').innerText = translations[lang].job3Company;
+    document.querySelector('#experiencia .job:nth-child(3) p:nth-child(3)').innerText = translations[lang].job3Period;
+    document.querySelector('#formacao h2').innerText = translations[lang].educationTitle;
+    document.querySelector('#formacao .formacao-item:nth-child(1) h3').innerText = translations[lang].degree1;
+    document.querySelector('#formacao .formacao-item:nth-child(1) p').innerText = translations[lang].school1;
+    document.querySelector('#formacao .formacao-item:nth-child(2) h3').innerText = translations[lang].degree2;
+    document.querySelector('#formacao .formacao-item:nth-child(2) p').innerText = translations[lang].school2;
+    document.querySelector('#formacao .formacao-item:nth-child(3) h3').innerText = translations[lang].degree3;
+    document.querySelector('#formacao .formacao-item:nth-child(3) p').innerText = translations[lang].school3;
+    document.querySelector('#formacao .formacao-item:nth-child(4) h3').innerText = translations[lang].degree4;
+    document.querySelector('#formacao .formacao-item:nth-child(4) p').innerText = translations[lang].school4;
+    document.querySelector('#competencias h2').innerText = translations[lang].skillsTitle;
+    document.querySelector('#interesses h2').innerText = translations[lang].interestsTitle;
+    const interestsList = document.querySelector('#interesses ul');
+    interestsList.innerHTML = '';
+    translations[lang].interests.forEach(interest => {
+        const li = document.createElement('li');
+        li.innerText = interest;
+        interestsList.appendChild(li);
+    });
+}
