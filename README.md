@@ -27,9 +27,9 @@ Este é um projeto de currículo pessoal desenvolvido em HTML e CSS, com suporte
 
 Abra diretamente no navegador:
 
-- 🇧🇷 [Versão em Português](docs/index.html)
-- 🇺🇸 [English Version](docs/index_en.html)
-- 🇯🇵 [日本語バージョン](docs/index_ja.html)
+- 🇧🇷 [Versão em Português](https://jeffalexandrino.github.io/CurriculumVitae/)
+- 🇺🇸 [English Version](https://jeffalexandrino.github.io/CurriculumVitae/index_en.html)
+- 🇯🇵 [日本語バージョン](https://jeffalexandrino.github.io/CurriculumVitae/index_jp.html)
 
 ---
 
