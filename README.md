@@ -13,12 +13,11 @@ Este é um projeto de currículo pessoal desenvolvido em HTML e CSS, com suporte
 
 ```
 .
-├── css/
-│   └── style.css
-├── index/
+├── docs/
 │   ├── index.html        # 🇧🇷 Versão em Português
 │   ├── index-en.html     # 🇺🇸 English Version
-│   └── index-ja.html     # 🇯🇵 日本語バージョン
+│   ├── index-ja.html     # 🇯🇵 日本語バージョン
+│   └── style.css         # Estilização 
 ├── README.md
 ```
 
@@ -28,9 +27,9 @@ Este é um projeto de currículo pessoal desenvolvido em HTML e CSS, com suporte
 
 Abra diretamente no navegador:
 
-- 🇧🇷 [Versão em Português](index/index.html)
-- 🇺🇸 [English Version](index/index-en.html)
-- 🇯🇵 [日本語バージョン](index/index-ja.html)
+- 🇧🇷 [Versão em Português](docs/index.html)
+- 🇺🇸 [English Version](docs/index_en.html)
+- 🇯🇵 [日本語バージョン](docs/index_ja.html)
 
 ---
 
